@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
+/*
+Theming 
+primary color = #40407a
+scondary color = #ffb142
+*/
+
+.main-header {
+	background: #130f40;
+	color: #fad390;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0px;
+	margin-bottom: 20px;
+
+}
+
+main {
+	padding: 20px 40px;
+}
+
+.main-container {
+	background:#a4b0be;
+	padding: 20px;
+	font-size: 1.3rem;
+}
+
+.input-form {
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.text-input {
+	font-size: 1.2rem;
+	padding: 10px 5px;
+	flex-grow: 1;
+	margin: 10px;
+}
+
+.my-btn {
+	font-size: 20px;
+	padding: 10px 40px;
+	background: #130f40;
+	color:  #fad390;
+	border: 0px;
+	margin: 10px;
+	transition: 0.2s;
+}
+
+.my-btn:hover {
+	cursor: pointer;
+	color:#40407a ;
+	background: #ffb142;
+	border: 1px solid #ffb142;
+	box-shadow: 1px 2px 2px 0px #40407a;
+}
+
+.no-bullets-list {
+	list-style-type: none;
+}
+
+.task-container {
+	margin:20px;
+	padding: 4px;
+}
+
+.no-bullets-list li {
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 5px;
+	transition: 0.4s;
+	background:white;
+}
+
+
+.no-bullets-list li:hover {
+	cursor: pointer;
+	background: #ffb142;
+	border: 1px dashed black;
+	box-shadow: 0px 1px 3px 0px #40407a; 
+}
+
+.delete {
+	color:#ffb142 ;
+	margin: 0px 3px;
+	padding: 3px 7px;
+	border: 1px double #ffb142;
+	background-color: #40407a;
+}
+
