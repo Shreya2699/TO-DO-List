@@ -91,7 +91,7 @@ main {
 
 .no-bullets-list li:hover {
 	cursor: pointer;
-	background: #ffb142;
+	background:#FDA7DF;
 	border: 1px dashed black;
 	box-shadow: 0px 1px 3px 0px #40407a; 
 }
@@ -109,7 +109,7 @@ main {
 	margin: 0px 20px;
 	padding: 3px 15px;
 	border: 1px double #192a56;
-	background-color:#fd79a8;
+	background-color:#F79F1F;
 }
 #message{
 	text-align:center;
