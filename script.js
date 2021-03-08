@@ -160,6 +160,8 @@ function fun1(){
 	taskInputElement1.style.display="none";
 	let k=document.getElementById("addTask");
 	k.style.display="none";
+	let j=document.getElementById("ref");
+	j.style.display="block";
 	for(x=0;x<arr.length;x++){
 		arr[x].style.display="block";
 	}
@@ -171,6 +173,8 @@ function fun2(){
 	taskInputElement1.style.display="block";
 	let k=document.getElementById("addTask");
 	k.style.display="block";
+	let j=document.getElementById("ref");
+	j.style.display="none";
 	for(x=0;x<arr.length;x++){
 		arr[x].style.display="none";
 	}
