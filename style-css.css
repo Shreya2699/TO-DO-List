@@ -98,18 +98,19 @@ main {
 
 .delete {
 	color:#ffb142 ;
+	
 	margin: 0px 3px;
-	padding: 3px 7px;
-	border: 1px double #ffb142;
-	background-color: #40407a;
+	
+	
+	
 }
 .delete1 {
-	color:#192a56 ;
+	color:White ;
 	font-weight:10px;
 	margin: 0px 20px;
 	padding: 3px 15px;
-	border: 1px double #192a56;
-	background-color:#F79F1F;
+	border: 1px double #4cd137;
+	background:#4cd137;
 }
 #message{
 	text-align:center;
@@ -125,6 +126,27 @@ main {
 	bottom:0px;
 	text-align:center;
 }
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #4c24bb;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
 
 
 

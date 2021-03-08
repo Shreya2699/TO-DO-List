@@ -1,3 +1,4 @@
+
 let username = prompt("Enter your Name");   //enter your name
 
 // if I don't add any name
@@ -54,13 +55,14 @@ addTaskBtn.addEventListener("click", function(e) {
 		y.style.display="none";
 		
 		let newLi = document.createElement("li");
-		let newDeleteBtn = document.createElement("button");
+		let newDeleteBtn = document.createElement("img");
 		let newpriority=document.createElement("button");
-		
+		newDeleteBtn.src = "https://img.icons8.com/metro/26/000000/delete.png";
+
 		
 		newDeleteBtn.className = "delete";
 		newpriority.className = "delete1";
-		newDeleteBtn.appendChild(document.createTextNode("X"));
+		
 
 		newLi.appendChild(newDeleteBtn); 
 
@@ -120,7 +122,11 @@ taskList.addEventListener("click", function(e) {
 		if(  confirm("Did you complete your task?") ) {
 			
 			let liToBeDeleted = e.target.parentElement;
-			taskList.removeChild(liToBeDeleted);
+			console.log(liToBeDeleted);
+			
+			liToBeDeleted.style.display="none";
+			liToBeDeleted .classList.add("completed");
+			
 			// alert("your task is deleted")
 			c=c-1;
 			if (c==0){
@@ -138,11 +144,6 @@ taskList.addEventListener("click", function(e) {
 
 
 })
-
-
-
-
-
 
 
 
