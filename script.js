@@ -156,7 +156,10 @@ taskList.addEventListener("click", function(e) {
 		
 })
 function fun1(){
-	
+	let taskInputElement1 = document.getElementById("task-input");
+	taskInputElement1.style.display="none";
+	let k=document.getElementById("addTask");
+	k.style.display="none";
 	for(x=0;x<arr.length;x++){
 		arr[x].style.display="block";
 	}
@@ -164,7 +167,10 @@ function fun1(){
 	
 }
 function fun2(){
-	
+	let taskInputElement1 = document.getElementById("task-input");
+	taskInputElement1.style.display="block";
+	let k=document.getElementById("addTask");
+	k.style.display="block";
 	for(x=0;x<arr.length;x++){
 		arr[x].style.display="none";
 	}

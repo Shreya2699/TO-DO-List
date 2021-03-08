@@ -156,6 +156,13 @@ select {
 	margin: 10px;
 	transition: 0.2s;
 }
+.my-btn1:hover {
+	cursor: pointer;
+	color:#40407a ;
+	background: #ffb142;
+	border: 1px solid #ffb142;
+	box-shadow: 1px 2px 2px 0px #40407a;
+}
 .hi{
 	font-size:20px;
 }
