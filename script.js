@@ -1,6 +1,6 @@
 
 let username = prompt("Enter your Name");   //enter your name
-
+let btn=document.getElementById("compbtn");
 // if I don't add any name
 if(typeof(username) === null) {
 	username = "user";
@@ -11,10 +11,7 @@ if(typeof(username) === null) {
 }
 
 let newTaskData = ""; // xyz
-function myfunc(){
-	k=document.getElementById("myDropdown");
-	k.style.display=block;
-}
+
 
 // selecting stuff
 let taskInputElement = document.getElementById("task-input");
@@ -46,7 +43,9 @@ let addTaskBtn = document.getElementById("addTask");
 
 addTaskBtn.addEventListener("click", function(e) {
 	e.preventDefault();
-	
+	let newLi = document.createElement("li");
+	let newDeleteBtn = document.createElement("img");
+	let newpriority=document.createElement("button");
 
 	if(newTaskData.trim().length == 0 ) {
 		alert("Write some task to add");
@@ -54,15 +53,13 @@ addTaskBtn.addEventListener("click", function(e) {
 		var y = document.getElementById("message");
 		y.style.display="none";
 		
-		let newLi = document.createElement("li");
-		let newDeleteBtn = document.createElement("img");
-		let newpriority=document.createElement("button");
+		
 		newDeleteBtn.src = "https://img.icons8.com/metro/26/000000/delete.png";
 
 		
 		newDeleteBtn.className = "delete";
 		newpriority.className = "delete1";
-		
+		newLi.className="hi";
 
 		newLi.appendChild(newDeleteBtn); 
 
@@ -115,6 +112,8 @@ taskList.addEventListener("click", function(e) {
 
 
 })
+var arr=[];
+var brr=[];
 taskList.addEventListener("click", function(e) {
 	
 	if(e.target.classList.contains("delete1") ) {
@@ -122,10 +121,16 @@ taskList.addEventListener("click", function(e) {
 		if(  confirm("Did you complete your task?") ) {
 			
 			let liToBeDeleted = e.target.parentElement;
-			console.log(liToBeDeleted);
+			let k= e.target.parentElement;
+			k.removeChild(k.childNodes[2]);
+			k.removeChild(k.childNodes[0]);
+			e.target.classList.remove("hi");
+			arr.push(liToBeDeleted);
+			
+			
 			
 			liToBeDeleted.style.display="none";
-			liToBeDeleted .classList.add("completed");
+			
 			
 			// alert("your task is deleted")
 			c=c-1;
@@ -136,15 +141,34 @@ taskList.addEventListener("click", function(e) {
 			
 
 		}
-
 		
 	}
+})	
+		
+taskList.addEventListener("click", function(e) {
 	
-
-
-
+	if(e.target.classList.contains("hi") ) {
+			let liToBeDeleted = e.target.parentElement;
+			console.log( liToBeDeleted);
+			brr.push(liToBeDeleted);
+				
+	}
+		
 })
+function fun1(){
+	
+	for(x=0;x<arr.length;x++){
+		arr[x].style.display="block";
+	}
 
+	
+}
+function fun2(){
+	
+	for(x=0;x<arr.length;x++){
+		arr[x].style.display="none";
+	}
+}
 
 
 

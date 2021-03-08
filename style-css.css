@@ -146,7 +146,19 @@ select {
     cursor: pointer;
     padding: 1rem;
 }
-
+.my-btn1 {
+	font-size: 20px;
+	float:right;
+	padding: 10px 40px;
+	background: #130f40;
+	color:  #fad390;
+	border: 0px;
+	margin: 10px;
+	transition: 0.2s;
+}
+.hi{
+	font-size:20px;
+}
 
 
 
